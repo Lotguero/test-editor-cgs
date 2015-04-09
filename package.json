@@ -1,0 +1,26 @@
+{
+  "name": "test-editor-cgs",
+  "version": "0.0.0",
+  "description": "Место для экспериментов.",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lotguero/test-editor-cgs.git"
+  },
+  "keywords": [
+    "test",
+    "Editor cgs"
+  ],
+  "author": "Lotguero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lotguero/test-editor-cgs/issues"
+  },
+  "homepage": "https://github.com/Lotguero/test-editor-cgs",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
