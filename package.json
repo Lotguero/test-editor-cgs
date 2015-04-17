@@ -20,6 +20,10 @@
     "url": "https://github.com/Lotguero/test-editor-cgs/issues"
   },
   "homepage": "https://github.com/Lotguero/test-editor-cgs",
+    
+  "scripts":{
+    "prepublish" :"gulp"
+  },  
   "devDependencies": {
     "browser-sync": "^2.5.3",
     "coffee-script": "^1.9.1",
