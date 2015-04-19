@@ -1,6 +1,6 @@
 gulp   = require 'gulp'
 coffee = require 'gulp-coffee'
-
+watch  = require 'gulp-watch'
 pkg    = require ('./package.json')
 
 gulp.task 'compile-coffee', ->
@@ -20,9 +20,22 @@ gulp.task 'xsl', ->
   gulp.src 'src/xsl/*.xsl'
     .pipe gulp.dest 'cache/.temp/xsl/'
 
+gulp.task 'css', ->
+  gulp.src 'src/css/*.css'
+    .pipe gulp.dest 'cache/.temp/css/'
+
 gulp.task 'default', [
 	'compile-coffee'
   'xsl'
   'xml'
   'html'
+  'css'
 ]
+
+
+
+gulp.task 'watch',->
+  gulp.watch [
+    'src/**/*'
+    ],
+    ['default']
