@@ -4,8 +4,10 @@
 
   <xsl:template match="/">
     <p>
-      <xsl:value-of select="//AAA"/>
+      <div>
+        <xsl:value-of select="//AAA"/>
+      </div>
     </p>
   </xsl:template>
-
+  
 </xsl:stylesheet>
