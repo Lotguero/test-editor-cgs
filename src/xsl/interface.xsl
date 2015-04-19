@@ -1,13 +1,24 @@
+<?xml version="1.0"?>
+
 <xsl:stylesheet
     version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <xsl:template match="/">
-    <p>
+    <xsl:processing-instruction  
+        name="xml-stylesheet">
+      <xsl:text>href="/css/main.css" type="text/css"</xsl:text>
+    </xsl:processing-instruction>
+    <xsl:apply-templates />
+  </xsl:template>
+  
+  <xsl:template match="@* | *">
+   
       <div>
         <xsl:value-of select="//cgs_menu"/>
       </div>
-    </p>
+
   </xsl:template>
   
 </xsl:stylesheet>
+
