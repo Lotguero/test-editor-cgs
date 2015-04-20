@@ -4,7 +4,7 @@ watch  = require 'gulp-watch'
 ignore = require 'gulp-ignore'
 pkg    = require './package.json'
 
-gulp.task 'compile-coffee', ->
+gulp.task 'coffee', ->
 	gulp.src 'src/coffee/test.coffee'
 		.pipe coffee { bare: true }
 		.pipe gulp.dest 'cache/.temp/js'
@@ -26,7 +26,7 @@ gulp.task 'css', ->
     .pipe gulp.dest 'cache/.temp/css/'
 
 gulp.task 'default', [
-	'compile-coffee'
+	'coffee'
   'xsl'
   'xml'
   'html'
