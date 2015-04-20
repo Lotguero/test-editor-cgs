@@ -15,7 +15,6 @@
   <xsl:template match="cgs_menu">
     
     <menu>
-      FFF g
       <xsl:value-of select="//cgs_menu"/>
     </menu>
     
