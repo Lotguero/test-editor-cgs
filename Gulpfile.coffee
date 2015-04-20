@@ -33,7 +33,7 @@ gulp.task 'xsl', ->
     .pipe gulp.dest 'cache/.temp/xsl/'
 
 gulp.task 'watch-xsl', ->
-	gulp.watch 'src/xsl/*.css', ->
+	gulp.watch 'src/xsl/*.xsl', ->
 		gulp.start 'xsl'
 
 gulp.task 'css', ->
