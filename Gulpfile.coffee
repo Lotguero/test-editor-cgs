@@ -1,7 +1,8 @@
 gulp   = require 'gulp'
 coffee = require 'gulp-coffee'
 watch  = require 'gulp-watch'
-pkg    = require ('./package.json')
+ignore = require 'gulp-ignore'
+pkg    = require './package.json'
 
 gulp.task 'compile-coffee', ->
 	gulp.src 'src/coffee/test.coffee'
