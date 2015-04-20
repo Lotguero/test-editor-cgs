@@ -3,7 +3,7 @@
 <xsl:stylesheet
     version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  
+
   <xsl:template match="/">
     <xsl:processing-instruction  
         name="xml-stylesheet">
@@ -12,12 +12,13 @@
     <xsl:apply-templates />
   </xsl:template>
   
-  <xsl:template match="@* | *">
-   
-      <div>
-        <xsl:value-of select="//cgs_menu"/>
-      </div>
-
+  <xsl:template match="cgs_menu">
+    
+    <menu>
+      FFF g
+      <xsl:value-of select="//cgs_menu"/>
+    </menu>
+    
   </xsl:template>
   
 </xsl:stylesheet>
