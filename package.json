@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lotguero/test-editor-cgs.git"
+    "url": "https://github.com/Lotgyero/test-editor-cgs.git"
   },
   "keywords": [
     "test",
@@ -17,9 +17,9 @@
   "author": "Lotguero",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Lotguero/test-editor-cgs/issues"
+    "url": "https://github.com/Lotgyero/test-editor-cgs/issues"
   },
-  "homepage": "https://github.com/Lotguero/test-editor-cgs",
+  "homepage": "https://github.com/Lotgyero/test-editor-cgs",
   "devDependencies": {
     "browser-sync": "^2.5.3",
     "coffee-script": "^1.9.1",
